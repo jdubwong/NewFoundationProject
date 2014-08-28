@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB51B76E1999891900C1569C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB51B76D1999891900C1569C /* Foundation.framework */; };
+		DB4F609919A44CED00AF1D2D /* Portfolio.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4F609819A44CED00AF1D2D /* Portfolio.m */; };
 		DB51B7711999891900C1569C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB51B7701999891900C1569C /* main.m */; };
-		DB51B7751999891900C1569C /* NewFoundationProject.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB51B7741999891900C1569C /* NewFoundationProject.1 */; };
+		DB51ECDD19A2C62200FAD041 /* ForeignStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = DB51ECDC19A2C62200FAD041 /* ForeignStockHolding.m */; };
+		DBEB4502199DBFCE004D1E81 /* StockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEB4501199DBFCE004D1E81 /* StockHolding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,18 +20,22 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				DB51B7751999891900C1569C /* NewFoundationProject.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DB4F609719A44CED00AF1D2D /* Portfolio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Portfolio.h; sourceTree = "<group>"; };
+		DB4F609819A44CED00AF1D2D /* Portfolio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Portfolio.m; sourceTree = "<group>"; };
 		DB51B76A1999891900C1569C /* NewFoundationProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NewFoundationProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB51B76D1999891900C1569C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DB51B7701999891900C1569C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DB51B7731999891900C1569C /* NewFoundationProject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewFoundationProject-Prefix.pch"; sourceTree = "<group>"; };
-		DB51B7741999891900C1569C /* NewFoundationProject.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = NewFoundationProject.1; sourceTree = "<group>"; };
+		DB51ECDB19A2C62200FAD041 /* ForeignStockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForeignStockHolding.h; sourceTree = "<group>"; };
+		DB51ECDC19A2C62200FAD041 /* ForeignStockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForeignStockHolding.m; sourceTree = "<group>"; };
+		DBEB4500199DBFCE004D1E81 /* StockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StockHolding.h; path = ../StockHolding.h; sourceTree = "<group>"; };
+		DBEB4501199DBFCE004D1E81 /* StockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StockHolding.m; path = ../StockHolding.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB51B76E1999891900C1569C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,8 +77,13 @@
 		DB51B76F1999891900C1569C /* NewFoundationProject */ = {
 			isa = PBXGroup;
 			children = (
+				DBEB4500199DBFCE004D1E81 /* StockHolding.h */,
+				DBEB4501199DBFCE004D1E81 /* StockHolding.m */,
 				DB51B7701999891900C1569C /* main.m */,
-				DB51B7741999891900C1569C /* NewFoundationProject.1 */,
+				DB4F609719A44CED00AF1D2D /* Portfolio.h */,
+				DB4F609819A44CED00AF1D2D /* Portfolio.m */,
+				DB51ECDB19A2C62200FAD041 /* ForeignStockHolding.h */,
+				DB51ECDC19A2C62200FAD041 /* ForeignStockHolding.m */,
 				DB51B7721999891900C1569C /* Supporting Files */,
 			);
 			path = NewFoundationProject;
@@ -139,6 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB4F609919A44CED00AF1D2D /* Portfolio.m in Sources */,
+				DB51ECDD19A2C62200FAD041 /* ForeignStockHolding.m in Sources */,
+				DBEB4502199DBFCE004D1E81 /* StockHolding.m in Sources */,
 				DB51B7711999891900C1569C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +265,7 @@
 				DB51B77A1999891900C1569C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
